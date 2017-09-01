@@ -51,3 +51,13 @@ And last, people who have recently joined the group of tracked users:
 ```
 welcome to new challenger dhalsim
 ```
+
+## Find who has already solved this damn problem
+
+To get a clue :)
+
+```
+$ ./get-solvers --result=result.json --problem="Du bruit"
+[...]
+```
+
