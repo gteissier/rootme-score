@@ -61,3 +61,12 @@ $ ./get-solvers --result=result.json --problem="Du bruit"
 [...]
 ```
 
+## Spot which problems have been solved by a single user
+
+So that he/she will not be the only one to have solved it.
+
+````
+$ ./highlight-uniques.py --result=result.json
+[...]
+```
+
