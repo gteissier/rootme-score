@@ -24,6 +24,6 @@ for u in result:
 if len(solvers) == 0:
   print('no user has solved this one "%s". Double check the name of the problem, in French :)' % options.problem)
 else:
-  print('users who can contact to get a tip:')
+  print('the following users have solved this problem:')
   for u in solvers:
     print('  %s' % u)
