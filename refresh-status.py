@@ -7,7 +7,7 @@ import json
 class FailedRequest(Exception): pass
 
 def get_results(user):
-  r = requests.get('https://root-me.org/%s' % user, params={'inc': 'score', 'lang': 'fr'})
+  r = requests.get('https://www.root-me.org/%s' % user, params={'inc': 'score', 'lang': 'fr'})
   if r.status_code != 200: raise FailedRequest(r)
   return r.content
 
