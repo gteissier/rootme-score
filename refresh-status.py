@@ -19,11 +19,11 @@ def get_status(user):
   score = int(m.group(1))
 
   problems = []
-  for m in re.findall(r'\<a class="(vert|rouge)".*?(x|o)&nbsp;(.*?)<', content):
+  for m in re.findall(r'\<a class=" (vert|rouge)".*?(x|o)&nbsp;(.*?)<', content):
     (color, status, problem) = m
     STATUSES = {
-      'x': True,
-      'o': False,
+      'x': False,
+      'o': True,
     }
     assert(status in STATUSES)
     problems.append((problem, STATUSES[status]))
